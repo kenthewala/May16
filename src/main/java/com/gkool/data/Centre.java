@@ -9,6 +9,11 @@ import javax.persistence.*;
  */
 @Entity
 public class Centre implements Serializable {
+	
+	@Id
+	private int id;
+	private String name;
+	private String city;
 
 	
 	private static final long serialVersionUID = 1L;
@@ -21,11 +26,38 @@ public class Centre implements Serializable {
 		this.id = id;
 	}
 
-	@Id
-	private int id;
+
 
 	public Centre() {
 		super();
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the city
+	 */
+	public String getCity() {
+		return city;
+	}
+
+	/**
+	 * @param city the city to set
+	 */
+	public void setCity(String city) {
+		this.city = city;
 	}
    
 }
