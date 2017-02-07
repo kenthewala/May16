@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller("/")
+@Controller("/score")
 public class ScoreController {
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
@@ -17,7 +17,7 @@ public class ScoreController {
 
 	}
 
-	@RequestMapping(value = "/hello/{name:.+}", method = RequestMethod.GET)
+	@RequestMapping(value = "/hello/{name}", method = RequestMethod.GET)
 	public ModelAndView hello(@PathVariable("name") String name) {
 
 		ModelAndView model = new ModelAndView();
