@@ -13,3 +13,11 @@ body {
 	height: 40px;
 	width: 40px;
 }
+
+.attempted {
+	color: green;
+}
+
+.notAttempted {
+	color: red;
+}
