@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-@Controller("/score")
+@Controller
+@RequestMapping("/score")
 public class ScoreController {
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {

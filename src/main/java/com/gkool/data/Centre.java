@@ -31,6 +31,17 @@ public class Centre implements Serializable {
 	public Centre() {
 		super();
 	}
+	
+	/**
+	 * @param id
+	 * @param name
+	 * @param city
+	 */
+	public Centre(String name, String city) {
+		super();
+		this.name = name;
+		this.city = city;
+	}
 
 	/**
 	 * @return the name
