@@ -4,15 +4,20 @@
 package com.gkool.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @author anoop
  *
  */
 @Controller
-public class LoginController {
+@RequestMapping("/dashboard")
+public class DashboardController {
 	
-/*	@RequestMapping(value = "/login", method = RequestMethod.POST)
+@RequestMapping(value = "", method = RequestMethod.GET)
 	public ModelAndView login(
 			@RequestParam(value = "error", required = false) String error,
 			@RequestParam(value = "logout", required = false) String logout) {
@@ -25,10 +30,10 @@ public class LoginController {
 			if (logout != null) {
 				model.addObject("msg", "You've been logged out successfully.");
 			}
-			model.setViewName("login");
+			model.setViewName("dashboard");
 
 			return model;
 
 		}
-*/
+
 }
